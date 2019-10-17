@@ -72,7 +72,7 @@ class UpdaterClass {
       Writes a buffer to the flash and increments the address
       Returns the amount written
     */
-    size_t write(uint8_t *data, size_t len);
+    size_t write(const uint8_t *data, size_t len);
 
     /*
       Writes the remaining bytes from the Stream to the flash

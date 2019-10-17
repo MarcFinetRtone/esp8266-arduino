@@ -373,7 +373,7 @@ bool UpdaterClass::_writeBuffer(){
   return true;
 }
 
-size_t UpdaterClass::write(uint8_t *data, size_t len) {
+size_t UpdaterClass::write(const uint8_t *data, size_t len) {
   if(hasError() || !isRunning())
     return 0;
 
